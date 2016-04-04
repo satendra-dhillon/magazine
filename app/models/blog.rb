@@ -1,5 +1,6 @@
 class Blog < ActiveRecord::Base
 	has_many :ratings, class_name: "Rating", foreign_key: :blog_id
+	has_many :comments, class_name: "Comment", foreign_key: :comment_id
 
 
 	def average_rating

@@ -1,13 +1,1 @@
-Welcome to Magazine home
-
-
-<%unless current_user.present?%>
-<%=link_to "Sign Up", new_user_registration_path%>
-<%=link_to "Sign In", new_user_session_path%>
-<%else%>
-<%=link_to "Sign Out", destroy_user_session_path, :method => :delete%>
-<%end%>
-
-
-<br>
-<%=link_to "Blogs", blogs_path%>
+<h2><center>Welcome to Magazine home</center></h2>

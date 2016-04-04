@@ -4,7 +4,7 @@
 <p>Author: <%=@blog.author%></p>
 <%= hidden_field_tag :blog_id, '', :value => @blog.id%>
 <p>
-	<div id="blog_rating" data-score= '<%=@rate_score%> '></div>
+	<!-- <div id="blog_rating" data-score= '<%#=@rate_score%> '></div> -->
 	<!-- <div id="blog_rating" data-score= '5'></div> -->
 </p>
 <%= link_to 'Edit', edit_blog_path(@blog) %> |
