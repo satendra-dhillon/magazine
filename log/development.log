@@ -275,3 +275,80 @@ WHERE c.contype = 'f'
   AND t3.nspname = ANY (current_schemas(false))
 ORDER BY c.conname
 [0m
+
+
+Started GET "/" for 127.0.0.1 at 2016-04-04 14:54:25 +0530
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (9.7ms)
+Completed 200 OK in 2054ms (Views: 2018.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-04-04 14:54:27 +0530
+
+
+Started GET "/assets/blog.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-04-04 14:54:28 +0530
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2016-04-04 14:54:28 +0530
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for 127.0.0.1 at 2016-04-04 14:54:28 +0530
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for 127.0.0.1 at 2016-04-04 14:54:28 +0530
+
+
+Started GET "/assets/blog.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-04-04 14:54:28 +0530
+
+
+Started GET "/assets/welcome.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for 127.0.0.1 at 2016-04-04 14:54:28 +0530
+
+
+Started GET "/assets/jquery.raty.min.self-54277f7fc03d3241ff08ca5b529cb485e95ad33e97300863a6a599a63ad6d333.js?body=1" for 127.0.0.1 at 2016-04-04 14:54:28 +0530
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-04-04 14:54:28 +0530
+
+
+Started GET "/assets/application.self-485c8cf268a04e63f3239c39174d156d06dc1b8fc2e80756019a50db0bad6916.js?body=1" for 127.0.0.1 at 2016-04-04 14:54:28 +0530
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2016-04-04 14:54:31 +0530
+Processing by Users::SessionsController#new as HTML
+  Rendered users/shared/_links.html.erb (21.6ms)
+  Rendered users/sessions/new.html.erb within layouts/application (105.8ms)
+Completed 200 OK in 211ms (Views: 159.8ms | ActiveRecord: 4.9ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2016-04-04 14:54:34 +0530
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.html.erb (15.2ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (36.7ms)
+Completed 200 OK in 94ms (Views: 89.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2016-04-04 14:54:36 +0530
+Processing by Users::SessionsController#new as HTML
+  Rendered users/shared/_links.html.erb (13.3ms)
+  Rendered users/sessions/new.html.erb within layouts/application (23.0ms)
+Completed 200 OK in 73ms (Views: 69.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/blogs" for 127.0.0.1 at 2016-04-04 14:54:42 +0530
+Processing by BlogsController#index as HTML
+  [1m[35mBlog Load (0.9ms)[0m  SELECT "blogs".* FROM "blogs"
+  Rendered blogs/index.html.erb within layouts/application (6.3ms)
+Completed 200 OK in 75ms (Views: 65.1ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/blogs/new" for 127.0.0.1 at 2016-04-04 14:54:43 +0530
+Processing by BlogsController#new as HTML
+Completed 401 Unauthorized in 4ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2016-04-04 14:54:43 +0530
+Processing by Users::SessionsController#new as HTML
+  Rendered users/shared/_links.html.erb (10.4ms)
+  Rendered users/sessions/new.html.erb within layouts/application (20.6ms)
+Completed 200 OK in 66ms (Views: 54.8ms | ActiveRecord: 0.0ms)
