@@ -4,7 +4,6 @@ class CreateBlogs < ActiveRecord::Migration
       t.string :title
       t.string :description
       t.string :author
-      t.decimal :rating
 
       t.timestamps null: false
     end

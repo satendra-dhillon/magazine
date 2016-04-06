@@ -13,6 +13,10 @@ Rails.application.routes.draw do
     collection do
       get :rating
     end
+    member do
+      get :comment
+      post :comment
+    end
   end 
 
   # Example of regular route:

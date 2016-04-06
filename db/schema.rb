@@ -20,7 +20,6 @@ ActiveRecord::Schema.define(version: 20160404103823) do
     t.string   "title"
     t.string   "description"
     t.string   "author"
-    t.decimal  "rating"
     t.datetime "created_at",  null: false
     t.datetime "updated_at",  null: false
   end
@@ -29,9 +28,10 @@ ActiveRecord::Schema.define(version: 20160404103823) do
     t.string   "text"
     t.integer  "commenter_id"
     t.integer  "blog_id"
-    t.integer  "parent_comment_id"
-    t.datetime "created_at",        null: false
-    t.datetime "updated_at",        null: false
+    t.integer  "commentable_id"
+    t.string   "commentable_type"
+    t.datetime "created_at",       null: false
+    t.datetime "updated_at",       null: false
   end
 
   create_table "ratings", force: :cascade do |t|

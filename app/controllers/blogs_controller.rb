@@ -7,8 +7,7 @@ class BlogsController < ApplicationController
   end
 
   def show
-    rate = Rating.where(rater_id: current_user.id, blog_id: @blog.id)
-    @rate_score = rate.present? ? rate.last.score.to_f : 0
+
   end
 
   def new
@@ -53,17 +52,12 @@ class BlogsController < ApplicationController
     end
   end
 
-  def rating
-    blog = Blog.find(params[:id])
-    rating = Rating.where(rater_id: current_user.id, blog_id: blog.id).last
-    if rating.present?
-      rating.update_attributes(score: params[:score])
-    else
-      rating = Rating.new(rater: current_user, score: params[:score], blog_id: blog.id)
-      rating.save
-    end
-    render text: true
-  end
+  
+  
+
+  # def comment
+    
+  # end
 
   private
     def set_blog

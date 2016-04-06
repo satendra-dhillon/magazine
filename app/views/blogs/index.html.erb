@@ -12,7 +12,6 @@
       <th>Title</th>
       <th>Description</th>
       <th>Author</th>
-      <th>Rating</th>
 
     </tr>
 
@@ -22,9 +21,7 @@
         <td><%= blog.title %></td>
         <td><%= blog.description %></td>
         <td><%= blog.author %></td>
-        <td>
-          <div class="rating" data-score="<%=blog.average_rating%>"></div>
-        </td>
+       
         <td><%= link_to 'Show', blog %></td>
         
         <% if current_user.present? && blog.author == current_user.name%>

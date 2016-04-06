@@ -4,7 +4,9 @@ class CreateComments < ActiveRecord::Migration
     	t.string :text
       t.belongs_to :commenter
       t.belongs_to :blog
-      t.integer  :parent_comment_id
+      # t.integer  :parent_comment_id
+      t.belongs_to :commentable, polymorphic: true
+
 
       t.timestamps null: false
     end

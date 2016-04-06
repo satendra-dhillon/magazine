@@ -1,0 +1,9 @@
+<%= form_tag do  %>
+  <div class="form-group">
+    <%= label_tag :text %>
+  </div>
+  <div class="form-group">
+    <%= text_area_tag :text, nil, size: "50x10" %>
+  </div>
+  <%= submit_tag "Send", class: "btn btn-success btn-md" %>
+<% end %>
